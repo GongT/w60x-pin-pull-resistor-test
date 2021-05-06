@@ -1,0 +1,9 @@
+from building import DefineGroup
+from os.path import join
+
+src	= Glob('**/*.c')
+src	+= Glob('*.c')
+
+group = DefineGroup('Applications', src, depend = [''])
+
+Return('group')
